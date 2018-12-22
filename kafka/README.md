@@ -61,3 +61,13 @@ docker-compose up -d
 ### Start Kafka consumer and verify message delivery
 ![Alt text](kafka-consumer.png?raw=true "$KAFKA_HOME/bin/kafka-console-consumer.sh --topic=topic --bootstrap-server=192.168.99.101:32768`")
 
+## Scaling up of brokers to 2:
+
+### Scaling up Kafka brokers 
+![Alt text](kafka-scale-2.png?raw=true "docker-compose scale kafka=2")
+
+### Create new Topic with 2 Brokers and Start Producer
+![Alt text](kafka-create-topic-2-partitions.png?raw=true "$KAFKA_HOME/bin/kafka-topics.sh --create --topic topic-2-replfactor --partitions 4 --zookeeper $ZK --replication-factor 2")
+
+### New Consumer
+![Alt text](kafka-consumer-2-partitions.png?raw=true "$KAFKA_HOME/bin/kafka-console-consumer.sh --topic=topic-2-replfactor --bootstrap-server=192.168.99.101:32769,192.168.99.101:32768")
