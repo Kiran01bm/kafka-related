@@ -1,8 +1,8 @@
 # Running Multiple Apache Kafka brokers in Docker (for a Development environment)
 
 ## Reference:
-[ This work is based on the reference found here: ](https://hub.docker.com/r/wurstmeister/kafka)
-[ Additional reference: ](http://wurstmeister.github.io/kafka-docker/)
+1. [ This work is based on the reference found here..: ](https://hub.docker.com/r/wurstmeister/kafka)
+2. [ Additional reference: ](http://wurstmeister.github.io/kafka-docker/)
 
 ## Procedure (with Default selections where possible):
 
