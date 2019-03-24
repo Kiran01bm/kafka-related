@@ -1,6 +1,9 @@
 # Kafka NodeJS - Producer and Consumer Example
 
-**Note:** This work is based on this [demo](https://github.com/anthonyhastings/kafka-nodejs-example), I've removed the PG elements from it and moved the base image tagging to pick up the latest.
+**Note:** 
+1. This work is based on this [demo](https://github.com/anthonyhastings/kafka-nodejs-example).
+2. I've removed the PG elements from it and moved the base image tagging to pick up the latest.
+3. And fixed a security vulnerability wrt to lodash version.
 
 ## Components
 1. Producer with http end point
